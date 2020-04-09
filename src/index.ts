@@ -25,7 +25,8 @@ import { ArrowFunctionExpression } from './visitors/arrow_function_expression';
 import { PluginOptions, PluginPass } from './types';
 import TSModuleDeclaration from './visitors/ts_module_declaration';
 import { ExportAllDeclaration } from './visitors/export_all_declaration';
-
+import { VariableDeclarator } from './visitors/variable_declarator';
+import { MultiIdentifierType } from './visitors/multi_identifier_type';
 const visitor: Visitor<PluginPass> = {
   Program,
   TypeAnnotation,
@@ -54,6 +55,10 @@ const visitor: Visitor<PluginPass> = {
   NewExpression,
   ArrowFunctionExpression,
   TSModuleDeclaration,
+  VariableDeclarator,
+  Identifier: MultiIdentifierType,
+  QualifiedTypeIdentifier: MultiIdentifierType,
+  TSQualifiedName: MultiIdentifierType,
 };
 
 // tslint:disable-next-line:no-any

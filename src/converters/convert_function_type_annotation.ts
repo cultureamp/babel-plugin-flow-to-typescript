@@ -15,13 +15,14 @@ import { generateFreeIdentifier } from '../util';
 import { convertFlowType } from './convert_flow_type';
 import { convertTypeParameterDeclaration } from './convert_type_parameter_declaration';
 import { baseNodeProps } from '../utils/baseNodeProps';
+import { PluginPass } from '../types';
 
-export function convertFunctionTypeAnnotation(node: FunctionTypeAnnotation) {
+export function convertFunctionTypeAnnotation(node: FunctionTypeAnnotation, state: PluginPass) {
   let typeParams = undefined;
 
   if (node.typeParameters !== null) {
     typeParams = {
-      ...convertTypeParameterDeclaration(node.typeParameters),
+      ...convertTypeParameterDeclaration(node.typeParameters, state),
       ...baseNodeProps(node.typeParameters),
     };
   }
@@ -56,17 +57,17 @@ export function convertFunctionTypeAnnotation(node: FunctionTypeAnnotation) {
             id.optional = true;
           }
           if (id.optional) {
-            let tsType = convertFlowType(param.typeAnnotation.typeAnnotation);
+            let tsType = convertFlowType(param.typeAnnotation.typeAnnotation, state);
             if (isTSFunctionType(tsType)) {
               tsType = tsParenthesizedType(tsType);
             }
             typeAnnotation = tsUnionType([tsType, tsNullKeyword()]);
           } else {
-            typeAnnotation = convertFlowType(param.typeAnnotation);
+            typeAnnotation = convertFlowType(param.typeAnnotation, state);
             hasRequiredAfter = true;
           }
         } else {
-          typeAnnotation = convertFlowType(param.typeAnnotation);
+          typeAnnotation = convertFlowType(param.typeAnnotation, state);
           hasRequiredAfter = true;
         }
         id.typeAnnotation = {
@@ -83,7 +84,7 @@ export function convertFunctionTypeAnnotation(node: FunctionTypeAnnotation) {
   if (node.rest) {
     if (node.rest.name) {
       const id = restElement(node.rest.name);
-      id.typeAnnotation = tsTypeAnnotation(convertFlowType(node.rest.typeAnnotation));
+      id.typeAnnotation = tsTypeAnnotation(convertFlowType(node.rest.typeAnnotation, state));
       parameters.push({ ...id, ...baseNodeProps(node.rest) });
     }
   }
@@ -91,7 +92,7 @@ export function convertFunctionTypeAnnotation(node: FunctionTypeAnnotation) {
   // Return type
   if (node.returnType) {
     returnType = tsTypeAnnotation({
-      ...convertFlowType(node.returnType),
+      ...convertFlowType(node.returnType, state),
       ...baseNodeProps(node.returnType),
     });
   }

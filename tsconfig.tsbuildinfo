@@ -1,0 +1,1260 @@
+{
+  "program": {
+    "fileInfos": {
+      "./node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7",
+        "signature": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7"
+      },
+      "./node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "./node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "./node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
+        "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
+      },
+      "./node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "9c67dcc7ca897b61f58d57d487bc9f07950546e5ac8701cbc41a8a4fec48b091",
+        "signature": "9c67dcc7ca897b61f58d57d487bc9f07950546e5ac8701cbc41a8a4fec48b091"
+      },
+      "./node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed",
+        "signature": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed"
+      },
+      "./node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6",
+        "signature": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6"
+      },
+      "./node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8",
+        "signature": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8"
+      },
+      "./node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122",
+        "signature": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122"
+      },
+      "./node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210",
+        "signature": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210"
+      },
+      "./node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca",
+        "signature": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca"
+      },
+      "./node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "./node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "./node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "./node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "./node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "./node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "c2d60b2e558d44384e4704b00e6b3d154334721a911f094d3133c35f0917b408",
+        "signature": "c2d60b2e558d44384e4704b00e6b3d154334721a911f094d3133c35f0917b408"
+      },
+      "./node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f",
+        "signature": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f"
+      },
+      "./node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c",
+        "signature": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c"
+      },
+      "./node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6",
+        "signature": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6"
+      },
+      "./node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
+        "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
+      },
+      "./node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": {
+        "version": "2958de3d25bfb0b5cdace0244e11c9637e5988920b99024db705a720ce6348e7",
+        "signature": "2958de3d25bfb0b5cdace0244e11c9637e5988920b99024db705a720ce6348e7"
+      },
+      "./node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "85085a0783532dc04b66894748dc4a49983b2fbccb0679b81356947021d7a215",
+        "signature": "85085a0783532dc04b66894748dc4a49983b2fbccb0679b81356947021d7a215"
+      },
+      "./node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "5494f46d3a8a0329d13ddc37f8759d5288760febb51c92336608d1c06bb18d29",
+        "signature": "5494f46d3a8a0329d13ddc37f8759d5288760febb51c92336608d1c06bb18d29"
+      },
+      "./node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62",
+        "signature": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62"
+      },
+      "./node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8",
+        "signature": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8"
+      },
+      "./node_modules/@babel/types/lib/index.d.ts": {
+        "version": "9566baf39af3e8e8525367b91f8313d0f3dee7dd21aa76bb9ecbc5c3c66df739",
+        "signature": "9566baf39af3e8e8525367b91f8313d0f3dee7dd21aa76bb9ecbc5c3c66df739"
+      },
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "56dede90729ef85351f132d66e05510851211d627e2f2c6621475d4f7938f365",
+        "signature": "56dede90729ef85351f132d66e05510851211d627e2f2c6621475d4f7938f365"
+      },
+      "./node_modules/@types/babel__template/index.d.ts": {
+        "version": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8",
+        "signature": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8"
+      },
+      "./src/helper_types.ts": {
+        "version": "1d81a5eb493b24168f101093b66c7cf970c9b1168aae14d13430a69b2443f04d",
+        "signature": "8d4a5eb613630e21c88db7ba22e8566d23c7fbff27e158aeb9903f34baadee98"
+      },
+      "./node_modules/@types/babel__generator/index.d.ts": {
+        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e"
+      },
+      "./node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "0dea413c59f1ff4a1f23f806d8aa5cdb7572652b301f081545fcf1c9ae10d4d5",
+        "signature": "0dea413c59f1ff4a1f23f806d8aa5cdb7572652b301f081545fcf1c9ae10d4d5"
+      },
+      "./node_modules/@types/babel__core/index.d.ts": {
+        "version": "af523cd24a11e1feadface05a9ac4f692a99bcb65c020b96061c63ac593824ad",
+        "signature": "af523cd24a11e1feadface05a9ac4f692a99bcb65c020b96061c63ac593824ad"
+      },
+      "./src/visitors/import_declaration.ts": {
+        "version": "92059bcb13051efb1a7f1c86aab77c550f1c53d683bffcf6f90d28b8cc8e3f7f",
+        "signature": "cd3aa3edeb1e95213936a1ec3b599e68c1ff454d6a3540b060b38906cf4a4ebf"
+      },
+      "./src/util.ts": {
+        "version": "286b61fdbb6cc349d25a7f0afd542d2972928a488b43251a7b8431cad5b13272",
+        "signature": "d42a8eeee7445c93e7de19bc538347d12f10129c3a0f781d85e7a0866e2b0997"
+      },
+      "./src/utils/recastprops.ts": {
+        "version": "a3f418adffea39c43d47e19dfab8dde509bd0e18cf1b57bdc8827594a73b8105",
+        "signature": "8329d5c2c11ec53712d13194c8f5362039a725cc880637524aeafd2ab78d715b"
+      },
+      "./src/utils/basenodeprops.ts": {
+        "version": "7f4c9c29e4e79041a287a02343ef932022321456dd4425d5347f3086f1634850",
+        "signature": "e56770d982655220f6d9eef161bda7eeb034289b2c8918493ecda1b368beadcb"
+      },
+      "./src/converters/convert_flow_identifier.ts": {
+        "version": "7100f64d8f13dbee76cfaf140da77358fa7b31295b03ecebf41aeb516f6ad935",
+        "signature": "7334aab4c94a550f6e831c3a6033763fa69ae9a1c8bc6b23e760b62ddfae1202"
+      },
+      "./src/types/babel_plugin_pass.ts": {
+        "version": "42ae4ed3a7129d592796dfc8e519944fa0d4cd392215700deb046b789bc80ce7",
+        "signature": "bc65784ebad53175984ec72df3d777a8a179037a17ea7c73f9a1b085cb387d79"
+      },
+      "./src/types.ts": {
+        "version": "afc57491c29320bbbc27d294424411d77c3b0592943eba42814de195ada8feea",
+        "signature": "4fe05cd4b0b9d216ef9ab57a2d905d7d0eebc9788a7426c19d83c27be847ea32"
+      },
+      "./src/converters/convert_type_parameter.ts": {
+        "version": "1c30935399cdcae5e5b06124dfa49e41f1d5c7f967c5a2ebabc242c39a68790a",
+        "signature": "e69f6cd671b7af5e6e76f89497e14bfcaf4b59911ec6720f68df394c79adbe3b"
+      },
+      "./src/converters/convert_type_parameter_declaration.ts": {
+        "version": "a74f60ad8f45c629504eed10f57697c2110210a7bf200517c226f52dfc622f3e",
+        "signature": "2be6ed8d08d0a4117f69aacc3c36d3b08da600ed7174897017e07a18c79a4695"
+      },
+      "./src/converters/convert_function_type_annotation.ts": {
+        "version": "73aefcb1e9f77f9078b7c3165bb9cfd21e76ca07a8c80e3139bf5e51d69cd94c",
+        "signature": "062a05c95b0f47daa70f20cd019f0b32d4fed42ac29366d6e0fc07d3678ec798"
+      },
+      "./src/converters/convert_object_type_call_property.ts": {
+        "version": "ba09f7777f98901b7601548b3a704178078353ee637d8885b281f7e302036221",
+        "signature": "e004d5c1a9879918f405936d6370fa9ae2a4f145976937650da088227ed81887"
+      },
+      "./src/converters/convert_object_type_indexer.ts": {
+        "version": "1571bc4c478b2e25e167f7ecbb9693697c8c8893a835936e22a2118180ab8bd9",
+        "signature": "01d57946d09111a74405e18233bd6cc5eaa4476af56d4a99fcee6f2c292a963c"
+      },
+      "./src/converters/convert_object_type_internal_slot.ts": {
+        "version": "3e50d8a18023ccbe6381cde329f2ae33093a1c0d66f6646d4faef821b73a436e",
+        "signature": "41366d9a20694a1151233d1891e1bdb15271425e7df7fb92c93fe8d1b1438832"
+      },
+      "./src/converters/get_property_key.ts": {
+        "version": "a4d45a6dafe9020e519ce19a789b0c015738f505b454ad5075a2acc3debaf3aa",
+        "signature": "d379529e1e7f96b34c1b5fa81b4d0eb1fcfaf2a0eb622aa5e437f02f0f84321b"
+      },
+      "./src/converters/convert_object_type_property.ts": {
+        "version": "ab40632bf3cc144494c88f30ae86ab6b19faa8ae2012a384cb8c8c5df6b80e62",
+        "signature": "5e8c6b833d4a306641ba83971e2ac9a6b0981d3b9458ad270935ad93d9b4805e"
+      },
+      "./src/utils/getscopeofstate.ts": {
+        "version": "e5a06c1c609b9310e4126dd4d32a854106b50b8b4520b40034cca640085721ae",
+        "signature": "59312287347a01ba17f13b3a3f74fa49999d27b2806c75fc4c93e94256e6fb70"
+      },
+      "./src/converters/convert_mapped_type.ts": {
+        "version": "e6d87dc8b021b62e9666c21e2b0d5e959ce82a2df514d486da61afd8807d7af4",
+        "signature": "e7d7e255943f0815fdee210f3d615ed1a0bb57c0a1440009132477ef2c76514a"
+      },
+      "./src/utils/utilitytypehelpers.ts": {
+        "version": "cd7b44144ab7c6d423aaabc6a9f1e01f1d1969a22dd3975d85d1be6972aeae4e",
+        "signature": "405ee10c6d02fd16740777b641be8452226fe358f05e00f01c5f8b34b65121bc"
+      },
+      "./src/converters/convert_flow_type.ts": {
+        "version": "54364e90ad91b65a413f8e87af7a61af2f345b77868bd331e530ab99ee9fd943",
+        "signature": "40675af584cf6c1b79424172306af02ce0ace3d90152837a267a3d67a4e04822"
+      },
+      "./src/converters/convert_opaque_type.ts": {
+        "version": "0b2ea27b5446c55a2b4a51214c838e10c8384d76c46b607baaa9379a8e087f50",
+        "signature": "9aaa293057ca1de306f45d3fb3666919424819872791997d480f59f2c32b6d6a"
+      },
+      "./src/utils/replacewith.ts": {
+        "version": "0e5fe9f65ed2a9de2b8962ca26a1ecc02b2cbf1e650a2ac82d64aaa9de3c4390",
+        "signature": "a3d2f27c78674a009f9d0b53955137e2299c8127ce83106bdc2d51346563f22c"
+      },
+      "./src/visitors/opaque_type.ts": {
+        "version": "e060c5ca515717d3d89f31fa406467b43d18e3a06ca0fe48cecd857283b90f04",
+        "signature": "68fdb4b3bfa984bbd6a2a308aba64b67a873016a6eb05f91655c7f23e50806d6"
+      },
+      "./src/converters/convert_type_annotation.ts": {
+        "version": "c9613703b7c83380c306a799231456f66fd958560daad59caaefeea9ae2a4c16",
+        "signature": "b8a080d86c22307bafe46559d3b9ffbf79a651155a03ba484d7df05f30fd5c6c"
+      },
+      "./src/visitors/type_annotation.ts": {
+        "version": "c5660720c139670ae97d82eec7051089b0285ebd88fec6b088917c9d8ca7d277",
+        "signature": "0f69100fae684c0a3443af0e02b360ce6ac8c9a3f64f65ec19a748d69707141a"
+      },
+      "./src/converters/convert_type_cast_expression.ts": {
+        "version": "61cd1325aff394980a2006bbaec71482a5f78a20ccb5b9ab41ac0c51292d2885",
+        "signature": "7e03b3c2a8a255082df1b8e913ec98a852447edf52b2a152b0ed67ef89d1cc23"
+      },
+      "./src/visitors/type_cast_expression.ts": {
+        "version": "a2292e2dff1942ebbc8f19dcdc27638fc3336b1c8d2ee8d9b909de6afddf8f3f",
+        "signature": "c957c990470584e0d9c83d1f2ce92664c34bb4fe522dc6c009663dcc1308e069"
+      },
+      "./src/visitors/type_parameter_declaration.ts": {
+        "version": "1a5d21c77c48dfc7af60b30735c2ce6cb9f3a52a57639f3cf5d8b99c499e8f0e",
+        "signature": "3c4e09a97844d31956f84710221dd30a524c11b15525cccf795bfaa81dbcf188"
+      },
+      "./src/converters/convert_interface_declaration.ts": {
+        "version": "edecaf84999c2dd01b590786c2bd2efcc6b9b8f4065329a5a5235324a990f90f",
+        "signature": "cfb3bead1075f9ab3b855cd57c630822abc929a55b4226e1b4b627a5b207d6b1"
+      },
+      "./src/converters/convert_type_parameter_instantiation.ts": {
+        "version": "43c7614e4c7483ffc56c1d0bde33c5504222b4016002ed778d5028002cae2b16",
+        "signature": "3225dbba91d95516fe05e06a44240b68399d1e5187405d5cb6c8b6ebe5ce2542"
+      },
+      "./src/transforms/transform_function_params.ts": {
+        "version": "6257d9972e2f1df8210905594afe2fadc177dff49c40d921216ac6366973e149",
+        "signature": "e7fc8bcacfbde7d4ed7e073596fbb24efa70d9f2a5e923fe211bde5f94bbd600"
+      },
+      "./src/transforms/transform_class_body.ts": {
+        "version": "66d768cc9861d637f1bc0d3fd1a84cfc90afa3d7cd0af2c3869d8a48710c8e2b",
+        "signature": "f9250aca68c296785857475dd81fca83b396895fa113d142dfbd80ac4d8a4dfb"
+      },
+      "./src/visitors/class_declaration.ts": {
+        "version": "8cc95abcf81bc33390980a2f60b33d4c9ed2cfe83dc06864f9337bde7490fea5",
+        "signature": "d7474a8b9cc57f4af2e4a30d1f5d479eb95ec48c34483e1604138d5cb5bd9325"
+      },
+      "./src/converters/convert_declare_class.ts": {
+        "version": "30004b89510b0ec0aa135ada3b1e583ae80f08ab5dfee6e1784ddd296cfb0191",
+        "signature": "1e7a69c1365f25af250703164044e30d52103b7e639e4aa1d5bb3675017b801c"
+      },
+      "./src/visitors/declare_class.ts": {
+        "version": "444a8846f0deede9ff4ee149737711889c664747a5e390c821f3a5a2a21901fa",
+        "signature": "bd8c76ac04a5b79839d34b047a479e7518e7e00f28f835de8943f3b4f9a6c739"
+      },
+      "./src/visitors/export_declaration.ts": {
+        "version": "2e4866a3af5422b57c5769530e1de555f48dbc0e2c240161b42951179fe08be4",
+        "signature": "7b81718436e3b2e1e5d20eea08390ab113247864bee3304655c379e28e44ef80"
+      },
+      "./src/visitors/interface_declaration.ts": {
+        "version": "7573b822162afc91d0dff997c6e6b365dfa920fe0afcba3ca9ae8161d17d1bd4",
+        "signature": "d1bebfd868c513f5647ffaa73eef8c29a6081ff4ce424bcb406ec0df97cb4031"
+      },
+      "./src/converters/convert_declare_function.ts": {
+        "version": "f22a705529d62373da39064e374af3a16ffa95dc0c6ea819f5349f007401eda9",
+        "signature": "27e4355a64f897ef3b1ec7fc2bcc2abeb20ab403eae1eecfd6b70421a9d8a6c8"
+      },
+      "./src/visitors/declare_function.ts": {
+        "version": "a2186b85ea8e0985890530a2673a3b5a5790a2d7bf86eb9b83d1a525b3c77b47",
+        "signature": "7e89155055a5f656edc4739af4736941b625602debd7854569bbc99079a14e88"
+      },
+      "./src/visitors/program.ts": {
+        "version": "d6932eb49f851ce38ab626886c65a7c40534857fa038ad5b8f72a48e9e290659",
+        "signature": "34902b28fc996aa11361b2d326172f06a962c2ed8d2b565b09507363b6dfa05a"
+      },
+      "./src/converters/convert_type_alias.ts": {
+        "version": "1196804066fa0e8d81d37b89af304706f57ab0afb91e7f9204f3929ff9ca555d",
+        "signature": "5f2da5edcd0cddf2dce2f403dc5a28d065b202596ce2fe23bc7a7227a59cd8f8"
+      },
+      "./src/visitors/type_alias.ts": {
+        "version": "ac8b5b3aa7f69bd9999a822514a401ca676d0a5500b1485ecf031191881019fb",
+        "signature": "134c70ba6b4278656d9439533352a3347e63896e52849ee3df42de579f8a3a9a"
+      },
+      "./src/visitors/function_declaration.ts": {
+        "version": "769d92cd09a51635956e2c794689d13ed0bcd769a3a76df769b1a091bb622c42",
+        "signature": "6dc1f89322d79419489e1f6c232a3ed1cbd5de0e64b878cf919d390fb37b4ec8"
+      },
+      "./src/visitors/call_expression.ts": {
+        "version": "526764ffdace152daf36c9800a06623f880d1e964fa07fbb0f94f2823105a9de",
+        "signature": "05dc618f7d3e351b54db992faa230809d58796d2a659dcb5ce4b5a646f7d7387"
+      },
+      "./src/converters/convert_declare_variable.ts": {
+        "version": "54be64d115b3a60db07bf469864f3844a8e84f1dc6e50b78be8a24c9b649044d",
+        "signature": "fd9912f2b4d0dbe062a63037123cabe30fafd072e5b37a19057a8deb5a626c19"
+      },
+      "./src/visitors/declare_variable.ts": {
+        "version": "0a4177b95e3ce607dd32f6919471181b26ae82f288f788490b3939152b9224c8",
+        "signature": "3991447de20039d4c8b86818294417eee87a8448d154d5a9f3f6ca6e21db828d"
+      },
+      "./src/converters/convert_declare_type_alias.ts": {
+        "version": "a28fb5f3cc9fb97685c2d6cf76468474e246aad1d475b03a2f81d493ebecbf95",
+        "signature": "cd04101acfce7314432235b551c56619c35cf9c07e5b8adaa10de39afc234966"
+      },
+      "./src/visitors/declare_type_alias.ts": {
+        "version": "49fd338f5459005e8de21be99da1c4b3d278f82dc70cdfa3d40d5abee0ae9d72",
+        "signature": "2fa0562545c3a2bffbfbbb1ffb5d667e48c6cbaafa29709250645bb832e5a0e1"
+      },
+      "./src/visitors/declare_interface.ts": {
+        "version": "4be3ed6b7a3d74ebf2a4e8f7ed36c6b341ce092d5f849fcd773c3847e749994d",
+        "signature": "ac8a8278745dcf15ab18cee26309ccb889faf1d904044729ee255bdd9bb4c4b4"
+      },
+      "./src/visitors/declare_opaque_type.ts": {
+        "version": "568ae9ca4c8a8800838c57fe4adb88e48b9249d3531d73c35eec2148f973b00f",
+        "signature": "733d3bff3505e83c8ae0910b2e04a05bfd0a4ccbfc732b4f0f85b7321b435043"
+      },
+      "./src/visitors/declare_module_exports.ts": {
+        "version": "ea43afad5ee8c1e7db5270e4d012a8b8329f15bc3894df5ccb02366400664fa3",
+        "signature": "b92ba3f7898811c1b3a6d9f7fc1132d32ca837f74d0ec26214ac17f44b259b34"
+      },
+      "./src/visitors/declare_module.ts": {
+        "version": "4a98c40cb51b6c53203cfd736a1f4e0084bb23615cb548deda3640896f16300d",
+        "signature": "e419635c8d821022c1e84ee9567452c63eea3d1af8b2af97c2c3a5fe077d51b5"
+      },
+      "./src/visitors/declare_export_declaration.ts": {
+        "version": "d45f4ca7d4c77bc0537d66287d056cf35cf8362105a7dbc044a23a5a920d13d8",
+        "signature": "c0deeda54aaf7a61dcbb64295a1076e62f54c5fa3310fe1d83431ac9ad36d0f6"
+      },
+      "./src/visitors/new_expression.ts": {
+        "version": "348aa11625d014546449fae72210dc853d59cd0dc460d0cfac560d4079a7fe86",
+        "signature": "dc1e8bbae3d1d94a13d6d81c0d472fa39c1539a9200e0819e20ec6d5129f5723"
+      },
+      "./src/visitors/arrow_function_expression.ts": {
+        "version": "52ddcdc4ebb9892fac552447552d05bae9d316f589ce035bf32f09fcdb48c92a",
+        "signature": "e52f6ee1cbc2787cfa708dbbf11b1346de8a5134f1601fac4bee7532dc39eaea"
+      },
+      "./src/visitors/ts_module_declaration.ts": {
+        "version": "08a9abaf98e5ad17c5f97edae7f76d3dea853b8b468495fe585e4c68e4a57b3f",
+        "signature": "c9ebff3c7e067c445e3bac4763927c0f9412301f2912465ac14b00a0b5079c9e"
+      },
+      "./src/visitors/export_all_declaration.ts": {
+        "version": "57a8db9f845f239b28c5b366f657a28e7ea46e5d043b80f3d0cd1f39673db185",
+        "signature": "3cb59cf9c890c1b28d109f35817859f065fa63ebc780f430ab8a77f4387bc2d6"
+      },
+      "./src/transforms/transform_empty_object_variable.ts": {
+        "version": "0c5e943924b59cee9571e3b6ff8c1e184324c1fc06a5f9e2b85ad78dc4ca9898",
+        "signature": "5d0a5a009c8d2d79f11ec018ea91afc35278eaff7c2f175924a3d8108ac37964"
+      },
+      "./src/visitors/variable_declarator.ts": {
+        "version": "d3703b1927a3b67bc1750235447e553d7b7cd80449dc7d0688dc0186b6c84e4d",
+        "signature": "5dd36d0a776db6a7a8a501b25b828d6eeaecb3566172daaa14e0cfcc8c79f4c1"
+      },
+      "./src/converters/identifier_replacements.ts": {
+        "version": "1707bb5c2bfe93c29ec3ea6b89a3f5cc6e1d47bd43e5e94b0c4c3832e18302a9",
+        "signature": "aa201213222a2c36fba47f8c4a6d0317f7c856b50e55ca69dafc4d5333d4da0a"
+      },
+      "./src/visitors/multi_identifier_type.ts": {
+        "version": "d8d1a6d8be653795f0945fe478cef2076b0e4b6b2398747d99f3d3101cd25986",
+        "signature": "7344e456af1b06dcb7cf168d9b157866d75dabfbee56245494a20c9f26a5ce7f"
+      },
+      "./src/index.ts": {
+        "version": "f1450ce883c1a7db2c040f23371574dafe574478ae5b4b2a25ceeabafa5a8c93",
+        "signature": "d41f0765d9ab5fc96423888e79a5c5546caeb3dc9574c16951a49c25ae9e9691"
+      },
+      "./src/types/babel-plugin-tester.d.ts": {
+        "version": "acf60cadd8ba9b6707f5e6d9c53e3a1f9392b79a9bf9f44708158cb4d8c6ec41",
+        "signature": "acf60cadd8ba9b6707f5e6d9c53e3a1f9392b79a9bf9f44708158cb4d8c6ec41"
+      },
+      "./src/types/utils.d.ts": {
+        "version": "dc390bbc975e60ac92971af1e079b41306a3d5b8e73e79e77987f777c766ed79",
+        "signature": "dc390bbc975e60ac92971af1e079b41306a3d5b8e73e79e77987f777c766ed79"
+      },
+      "./node_modules/@types/istanbul-lib-coverage/index.d.ts": {
+        "version": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd",
+        "signature": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd"
+      },
+      "./node_modules/@types/istanbul-lib-report/index.d.ts": {
+        "version": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee",
+        "signature": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee"
+      },
+      "./node_modules/@types/istanbul-reports/index.d.ts": {
+        "version": "93b59bc67329d5add033e3198583c39aa939cef891e6a2b763e0bea2b514ea9b",
+        "signature": "93b59bc67329d5add033e3198583c39aa939cef891e6a2b763e0bea2b514ea9b"
+      },
+      "./node_modules/@types/stack-utils/index.d.ts": {
+        "version": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49",
+        "signature": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49"
+      },
+      "./node_modules/@types/yargs-parser/index.d.ts": {
+        "version": "fdfbe321c556c39a2ecf791d537b999591d0849e971dd938d88f460fea0186f6",
+        "signature": "fdfbe321c556c39a2ecf791d537b999591d0849e971dd938d88f460fea0186f6"
+      },
+      "./node_modules/@types/yargs/index.d.ts": {
+        "version": "6055ac126cf1a6c818330d033eb3e99df5070a598359fe30c430f844dafac7ce",
+        "signature": "6055ac126cf1a6c818330d033eb3e99df5070a598359fe30c430f844dafac7ce"
+      }
+    },
+    "options": {
+      "declaration": true,
+      "lib": [
+        "lib.es2018.d.ts",
+        "lib.dom.d.ts"
+      ],
+      "module": 1,
+      "moduleResolution": 2,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "preserveConstEnums": false,
+      "sourceMap": true,
+      "strict": true,
+      "target": 2,
+      "skipLibCheck": true,
+      "composite": true,
+      "configFilePath": "./tsconfig.json"
+    },
+    "referencedMap": {
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__template/index.d.ts": [
+        "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/helper_types.ts": [
+        "./node_modules/@types/babel__template/index.d.ts"
+      ],
+      "./node_modules/@types/babel__generator/index.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__traverse/index.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__core/index.d.ts": [
+        "./node_modules/@types/babel__generator/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@types/babel__template/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@babel/parser/typings/babel-parser.d.ts"
+      ],
+      "./src/visitors/import_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts"
+      ],
+      "./src/utils/recastprops.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/utils/basenodeprops.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/utils/recastprops.ts"
+      ],
+      "./src/converters/convert_flow_identifier.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/types.ts": [
+        "./src/types/babel_plugin_pass.ts"
+      ],
+      "./src/converters/convert_type_parameter.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_type_parameter_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_type_parameter.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_function_type_annotation.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/util.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/converters/convert_type_parameter_declaration.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_object_type_call_property.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_function_type_annotation.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_object_type_indexer.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts",
+        "./src/converters/convert_flow_type.ts"
+      ],
+      "./src/converters/convert_object_type_internal_slot.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/converters/convert_function_type_annotation.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/get_property_key.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/utils/basenodeprops.ts"
+      ],
+      "./src/converters/convert_object_type_property.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/converters/get_property_key.ts",
+        "./src/types.ts"
+      ],
+      "./src/utils/getscopeofstate.ts": [
+        "./src/types.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/converters/convert_mapped_type.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts",
+        "./src/utils/getscopeofstate.ts",
+        "./src/converters/convert_flow_type.ts"
+      ],
+      "./src/utils/utilitytypehelpers.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/converters/convert_flow_type.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/util.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/converters/convert_flow_identifier.ts",
+        "./src/converters/convert_function_type_annotation.ts",
+        "./src/converters/convert_object_type_call_property.ts",
+        "./src/converters/convert_object_type_indexer.ts",
+        "./src/converters/convert_object_type_internal_slot.ts",
+        "./src/converters/convert_object_type_property.ts",
+        "./src/types.ts",
+        "./src/converters/convert_mapped_type.ts",
+        "./src/utils/utilitytypehelpers.ts"
+      ],
+      "./src/converters/convert_opaque_type.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/util.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/utils/replacewith.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts"
+      ],
+      "./src/visitors/opaque_type.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_opaque_type.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_type_annotation.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/type_annotation.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_type_annotation.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_type_cast_expression.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/utils/recastprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/type_cast_expression.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_type_cast_expression.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/type_parameter_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_type_parameter_declaration.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_interface_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/converters/convert_object_type_call_property.ts",
+        "./src/converters/convert_object_type_indexer.ts",
+        "./src/converters/convert_object_type_internal_slot.ts",
+        "./src/converters/convert_object_type_property.ts",
+        "./src/converters/convert_type_parameter_declaration.ts"
+      ],
+      "./src/converters/convert_type_parameter_instantiation.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/types.ts"
+      ],
+      "./src/transforms/transform_function_params.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/types.ts",
+        "./src/utils/replacewith.ts"
+      ],
+      "./src/transforms/transform_class_body.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/transforms/transform_function_params.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/class_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_interface_declaration.ts",
+        "./src/converters/convert_type_parameter_instantiation.ts",
+        "./src/converters/convert_type_parameter_declaration.ts",
+        "./src/utils/replacewith.ts",
+        "./src/transforms/transform_class_body.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_declare_class.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/converters/convert_object_type_indexer.ts",
+        "./src/util.ts",
+        "./src/converters/convert_interface_declaration.ts",
+        "./src/converters/convert_type_parameter_declaration.ts",
+        "./src/converters/get_property_key.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_class.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_declare_class.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/export_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts"
+      ],
+      "./src/visitors/interface_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_interface_declaration.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_declare_function.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_function_type_annotation.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_function.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_declare_function.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/program.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/helper_types.ts",
+        "./src/util.ts"
+      ],
+      "./src/converters/convert_type_alias.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/converters/convert_type_parameter_declaration.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/type_alias.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_type_alias.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/function_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/transforms/transform_function_params.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/call_expression.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_type_parameter_instantiation.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_declare_variable.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_variable.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_declare_variable.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_declare_type_alias.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_type_parameter_declaration.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_type_alias.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_declare_type_alias.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_interface.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_interface_declaration.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_opaque_type.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/util.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_module_exports.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_module.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/utils/basenodeprops.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_export_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/converters/convert_flow_type.ts",
+        "./src/converters/convert_declare_variable.ts",
+        "./src/converters/convert_declare_function.ts",
+        "./src/converters/convert_declare_type_alias.ts",
+        "./src/converters/convert_declare_class.ts",
+        "./src/utils/replacewith.ts",
+        "./src/converters/convert_interface_declaration.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/new_expression.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/converters/convert_type_parameter_instantiation.ts",
+        "./src/utils/replacewith.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/arrow_function_expression.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/transforms/transform_function_params.ts",
+        "./src/types.ts",
+        "./src/converters/convert_type_parameter_declaration.ts",
+        "./src/utils/replacewith.ts"
+      ],
+      "./src/visitors/ts_module_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/export_all_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts"
+      ],
+      "./src/transforms/transform_empty_object_variable.ts": [
+        "./node_modules/@types/babel__core/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts",
+        "./src/utils/utilitytypehelpers.ts"
+      ],
+      "./src/visitors/variable_declarator.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts",
+        "./src/transforms/transform_empty_object_variable.ts"
+      ],
+      "./src/visitors/multi_identifier_type.ts": [
+        "./node_modules/@types/babel__core/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts",
+        "./src/converters/identifier_replacements.ts"
+      ],
+      "./src/index.ts": [
+        "./node_modules/@types/babel__core/index.d.ts",
+        "./src/visitors/import_declaration.ts",
+        "./src/visitors/opaque_type.ts",
+        "./src/visitors/type_annotation.ts",
+        "./src/visitors/type_cast_expression.ts",
+        "./src/visitors/type_parameter_declaration.ts",
+        "./src/visitors/class_declaration.ts",
+        "./src/visitors/declare_class.ts",
+        "./src/visitors/export_declaration.ts",
+        "./src/visitors/interface_declaration.ts",
+        "./src/visitors/declare_function.ts",
+        "./src/visitors/program.ts",
+        "./src/visitors/type_alias.ts",
+        "./src/visitors/function_declaration.ts",
+        "./src/visitors/call_expression.ts",
+        "./src/visitors/declare_variable.ts",
+        "./src/visitors/declare_type_alias.ts",
+        "./src/visitors/declare_interface.ts",
+        "./src/visitors/declare_opaque_type.ts",
+        "./src/visitors/declare_module_exports.ts",
+        "./src/visitors/declare_module.ts",
+        "./src/visitors/declare_export_declaration.ts",
+        "./src/visitors/new_expression.ts",
+        "./src/visitors/arrow_function_expression.ts",
+        "./src/types.ts",
+        "./src/visitors/ts_module_declaration.ts",
+        "./src/visitors/export_all_declaration.ts",
+        "./src/visitors/variable_declarator.ts",
+        "./src/visitors/multi_identifier_type.ts"
+      ],
+      "./node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "./node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "./node_modules/@types/istanbul-reports/index.d.ts": [
+        "./node_modules/@types/istanbul-lib-report/index.d.ts",
+        "./node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "./node_modules/@types/yargs/index.d.ts": [
+        "./node_modules/@types/yargs-parser/index.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__template/index.d.ts": [
+        "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "./node_modules/@types/babel__template/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/helper_types.ts": [
+        "./node_modules/@types/babel__template/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__generator/index.d.ts": [
+        "./node_modules/@types/babel__template/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__traverse/index.d.ts": [
+        "./node_modules/@types/babel__template/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./node_modules/@types/babel__core/index.d.ts": [
+        "./node_modules/@types/babel__generator/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@types/babel__template/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@babel/parser/typings/babel-parser.d.ts"
+      ],
+      "./src/visitors/import_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/utils/recastprops.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/utils/basenodeprops.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/converters/convert_flow_identifier.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/types.ts": [
+        "./src/types/babel_plugin_pass.ts"
+      ],
+      "./src/converters/convert_type_parameter.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_type_parameter_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_function_type_annotation.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_object_type_call_property.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_object_type_indexer.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_object_type_internal_slot.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/get_property_key.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/converters/convert_object_type_property.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/utils/getscopeofstate.ts": [
+        "./src/types.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts"
+      ],
+      "./src/converters/convert_mapped_type.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/utils/utilitytypehelpers.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/converters/convert_flow_type.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_opaque_type.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/utils/replacewith.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts"
+      ],
+      "./src/visitors/opaque_type.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_type_annotation.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/type_annotation.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_type_cast_expression.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/type_cast_expression.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/type_parameter_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_interface_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_type_parameter_instantiation.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/transforms/transform_function_params.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/transforms/transform_class_body.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/class_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_declare_class.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_class.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/export_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/visitors/interface_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_declare_function.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_function.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/program.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts"
+      ],
+      "./src/converters/convert_type_alias.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/type_alias.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/function_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/call_expression.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_declare_variable.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_variable.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/converters/convert_declare_type_alias.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_type_alias.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_interface.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_opaque_type.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_module_exports.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_module.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/declare_export_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/new_expression.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/arrow_function_expression.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/ts_module_declaration.ts": [
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/export_all_declaration.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "./src/transforms/transform_empty_object_variable.ts": [
+        "./node_modules/@types/babel__core/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/variable_declarator.ts": [
+        "./node_modules/@types/babel__traverse/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/visitors/multi_identifier_type.ts": [
+        "./node_modules/@types/babel__core/index.d.ts",
+        "./node_modules/@babel/types/lib/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/index.ts": [
+        "./src/types.ts",
+        "./node_modules/@types/babel__core/index.d.ts"
+      ],
+      "./node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "./node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "./node_modules/@types/istanbul-reports/index.d.ts": [
+        "./node_modules/@types/istanbul-lib-report/index.d.ts",
+        "./node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "./node_modules/@types/yargs/index.d.ts": [
+        "./node_modules/@types/yargs-parser/index.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "./node_modules/typescript/lib/lib.es5.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.d.ts",
+      "./node_modules/typescript/lib/lib.es2016.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.d.ts",
+      "./node_modules/typescript/lib/lib.dom.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "./node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "./src/converters/convert_type_parameter.ts",
+      "./src/converters/convert_type_parameter_declaration.ts",
+      "./src/visitors/arrow_function_expression.ts",
+      "./src/converters/convert_declare_type_alias.ts",
+      "./src/visitors/declare_export_declaration.ts",
+      "./src/index.ts",
+      "./src/visitors/declare_type_alias.ts",
+      "./src/converters/convert_type_alias.ts",
+      "./src/converters/convert_declare_class.ts",
+      "./src/visitors/declare_class.ts",
+      "./src/visitors/class_declaration.ts",
+      "./src/converters/convert_interface_declaration.ts",
+      "./src/visitors/declare_interface.ts",
+      "./src/visitors/interface_declaration.ts",
+      "./src/visitors/type_parameter_declaration.ts",
+      "./src/converters/convert_function_type_annotation.ts",
+      "./src/converters/convert_declare_function.ts",
+      "./src/visitors/declare_function.ts",
+      "./src/converters/convert_flow_type.ts",
+      "./src/converters/convert_object_type_internal_slot.ts",
+      "./src/converters/convert_object_type_call_property.ts",
+      "./src/converters/convert_object_type_indexer.ts",
+      "./src/converters/convert_object_type_property.ts",
+      "./src/utils/getscopeofstate.ts",
+      "./src/converters/convert_mapped_type.ts",
+      "./src/converters/convert_opaque_type.ts",
+      "./src/visitors/opaque_type.ts",
+      "./src/converters/convert_type_annotation.ts",
+      "./src/visitors/type_annotation.ts",
+      "./src/converters/convert_type_cast_expression.ts",
+      "./src/visitors/type_cast_expression.ts",
+      "./src/converters/convert_type_parameter_instantiation.ts",
+      "./src/visitors/new_expression.ts",
+      "./src/visitors/call_expression.ts",
+      "./src/transforms/transform_function_params.ts",
+      "./src/visitors/function_declaration.ts",
+      "./src/transforms/transform_class_body.ts",
+      "./src/converters/convert_declare_variable.ts",
+      "./src/visitors/declare_variable.ts",
+      "./src/visitors/declare_module_exports.ts",
+      "./src/transforms/transform_empty_object_variable.ts",
+      "./src/visitors/variable_declarator.ts",
+      "./src/visitors/multi_identifier_type.ts",
+      "./src/types/utils.d.ts",
+      "./node_modules/@babel/types/lib/index.d.ts",
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+      "./node_modules/@types/babel__template/index.d.ts",
+      "./src/helper_types.ts",
+      "./node_modules/@types/babel__generator/index.d.ts",
+      "./node_modules/@types/babel__traverse/index.d.ts",
+      "./node_modules/@types/babel__core/index.d.ts",
+      "./src/visitors/import_declaration.ts",
+      "./src/util.ts",
+      "./src/utils/recastprops.ts",
+      "./src/utils/basenodeprops.ts",
+      "./src/converters/convert_flow_identifier.ts",
+      "./src/types/babel_plugin_pass.ts",
+      "./src/types.ts",
+      "./src/converters/get_property_key.ts",
+      "./src/utils/utilitytypehelpers.ts",
+      "./src/utils/replacewith.ts",
+      "./src/visitors/export_declaration.ts",
+      "./src/visitors/program.ts",
+      "./src/visitors/type_alias.ts",
+      "./src/visitors/declare_opaque_type.ts",
+      "./src/visitors/declare_module.ts",
+      "./src/visitors/ts_module_declaration.ts",
+      "./src/visitors/export_all_declaration.ts",
+      "./src/converters/identifier_replacements.ts",
+      "./src/types/babel-plugin-tester.d.ts",
+      "./node_modules/@types/istanbul-lib-coverage/index.d.ts",
+      "./node_modules/@types/istanbul-lib-report/index.d.ts",
+      "./node_modules/@types/istanbul-reports/index.d.ts",
+      "./node_modules/@types/stack-utils/index.d.ts",
+      "./node_modules/@types/yargs-parser/index.d.ts",
+      "./node_modules/@types/yargs/index.d.ts"
+    ]
+  },
+  "version": "3.8.3"
+}

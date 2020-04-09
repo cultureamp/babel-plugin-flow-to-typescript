@@ -7,7 +7,7 @@ import { PluginPass } from '../types';
 
 export function DeclareTypeAlias(path: NodePath<DeclareTypeAlias>, state: PluginPass) {
   const node = path.node;
-  const replacement = convertDeclareTypeAlias(node);
+  const replacement = convertDeclareTypeAlias(node, state);
   replacement.declare = !state.get('isModuleDeclaration');
   replaceWith(path, replacement);
 }

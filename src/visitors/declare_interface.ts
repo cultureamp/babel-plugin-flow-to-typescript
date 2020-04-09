@@ -6,7 +6,7 @@ import { PluginPass } from '../types';
 
 export function DeclareInterface(path: NodePath<DeclareInterface>, state: PluginPass) {
   const node = path.node;
-  const replacement = convertInterfaceDeclaration(node);
+  const replacement = convertInterfaceDeclaration(node, state);
   replacement.declare = !state.get('isModuleDeclaration');
   replaceWith(path, replacement);
 }

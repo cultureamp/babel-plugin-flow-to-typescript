@@ -8,13 +8,17 @@ import {
 import { convertFlowType } from './convert_flow_type';
 import { convertFunctionTypeAnnotation } from './convert_function_type_annotation';
 import { baseNodeProps } from '../utils/baseNodeProps';
+import { PluginPass } from '../types';
 
-export function convertObjectTypeInternalSlot(property: ObjectTypeInternalSlot) {
+export function convertObjectTypeInternalSlot(property: ObjectTypeInternalSlot, state: PluginPass) {
   if (property.method) {
     if (!isFunctionTypeAnnotation(property.value)) {
       throw new Error('FunctionTypeAnnotation expected');
     }
-    const { typeParams, parameters, returnType } = convertFunctionTypeAnnotation(property.value);
+    const { typeParams, parameters, returnType } = convertFunctionTypeAnnotation(
+      property.value,
+      state,
+    );
     const methodSignature = tsMethodSignature(property.id, typeParams, parameters, returnType);
 
     methodSignature.computed = true;
@@ -23,7 +27,10 @@ export function convertObjectTypeInternalSlot(property: ObjectTypeInternalSlot) 
   } else {
     const tsPropSignature = tsPropertySignature(
       property.id,
-      tsTypeAnnotation({ ...convertFlowType(property.value), ...baseNodeProps(property.value) }),
+      tsTypeAnnotation({
+        ...convertFlowType(property.value, state),
+        ...baseNodeProps(property.value),
+      }),
     );
     tsPropSignature.optional = property.optional;
     tsPropSignature.computed = true;

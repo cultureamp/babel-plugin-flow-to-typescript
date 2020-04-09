@@ -13,13 +13,14 @@ import {
 import { convertFlowType } from './convert_flow_type';
 import { baseNodeProps } from '../utils/baseNodeProps';
 import { getPropertyKey } from './get_property_key';
+import { PluginPass } from '../types';
 
-export function convertObjectTypeProperty(property: ObjectTypeProperty) {
+export function convertObjectTypeProperty(property: ObjectTypeProperty, state: PluginPass) {
   let tsType;
   if (!isNullableTypeAnnotation(property.value)) {
-    tsType = convertFlowType(property.value);
+    tsType = convertFlowType(property.value, state);
   } else {
-    let tsValueT = convertFlowType(property.value.typeAnnotation);
+    let tsValueT = convertFlowType(property.value.typeAnnotation, state);
     if (isTSFunctionType(tsValueT)) {
       tsValueT = tsParenthesizedType(tsValueT);
     }

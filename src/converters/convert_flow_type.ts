@@ -66,22 +66,25 @@ import {
   tsVoidKeyword,
 } from '@babel/types';
 import { UnsupportedError, warnOnlyOnce } from '../util';
+import { baseNodeProps } from '../utils/baseNodeProps';
 import { convertFlowIdentifier } from './convert_flow_identifier';
 import { convertFunctionTypeAnnotation } from './convert_function_type_annotation';
 import { convertObjectTypeCallProperty } from './convert_object_type_call_property';
 import { convertObjectTypeIndexer } from './convert_object_type_indexer';
 import { convertObjectTypeInternalSlot } from './convert_object_type_internal_slot';
-import { baseNodeProps } from '../utils/baseNodeProps';
 import { convertObjectTypeProperty } from './convert_object_type_property';
+import { PluginPass } from '../types';
+import { convertMappedType } from './convert_mapped_type';
+import { emptyFlowObjectType } from '../utils/utilityTypeHelpers';
 
-export function convertFlowType(node: FlowType): TSType {
+export function convertFlowType(node: FlowType, state: PluginPass): TSType {
   if (isAnyTypeAnnotation(node)) {
     return tsAnyKeyword();
   }
 
   if (isArrayTypeAnnotation(node)) {
     return tsArrayType({
-      ...convertFlowType(node.elementType),
+      ...convertFlowType(node.elementType, state),
       ...baseNodeProps(node.elementType),
     });
   }
@@ -110,7 +113,7 @@ export function convertFlowType(node: FlowType): TSType {
     let tsTypeParameters: TSTypeParameterInstantiation | null = null;
     if (typeParameters) {
       const tsParams = typeParameters.params.map(p => ({
-        ...convertFlowType(p),
+        ...convertFlowType(p, state),
         ...baseNodeProps(p),
       }));
       tsTypeParameters = tsTypeParameterInstantiation(tsParams);
@@ -198,10 +201,11 @@ export function convertFlowType(node: FlowType): TSType {
     } else if (isIdentifier(id) && id.name === 'Object') {
       return tsObjectKeyword();
     } else if (isQualifiedTypeIdentifier(id) || isIdentifier(id)) {
-      return tsTypeReference(
+      const ref = tsTypeReference(
         convertFlowIdentifier(id),
         tsTypeParameters && tsTypeParameters.params.length ? tsTypeParameters : null,
       );
+      return ref;
     }
     // for other utility types, helpers are added at top of file in Program visitor
   }
@@ -210,7 +214,7 @@ export function convertFlowType(node: FlowType): TSType {
     const flowTypes = node.types;
     return tsIntersectionType(
       flowTypes.map(v => {
-        let tsType = convertFlowType(v);
+        let tsType = convertFlowType(v, state);
         if (isTSFunctionType(tsType)) {
           tsType = tsParenthesizedType(tsType);
         }
@@ -224,7 +228,7 @@ export function convertFlowType(node: FlowType): TSType {
   }
 
   if (isNullableTypeAnnotation(node)) {
-    let tsType = convertFlowType(node.typeAnnotation);
+    let tsType = convertFlowType(node.typeAnnotation, state);
     if (isTSFunctionType(tsType)) {
       tsType = tsParenthesizedType(tsType);
     }
@@ -247,6 +251,17 @@ export function convertFlowType(node: FlowType): TSType {
   }
 
   if (isObjectTypeAnnotation(node)) {
+    if (
+      !node.properties.length &&
+      !node.callProperties?.length &&
+      !node.indexers?.length &&
+      !node.internalSlots?.length
+    ) {
+      return emptyFlowObjectType();
+    }
+
+    const mappedType = convertMappedType(node, state);
+    if (mappedType) return mappedType;
     const members: TSTypeElement[] = [];
     const spreads: TSType[] = [];
 
@@ -260,26 +275,29 @@ export function convertFlowType(node: FlowType): TSType {
     if (node.properties && node.properties.length > 0) {
       for (const property of node.properties) {
         if (isObjectTypeProperty(property)) {
-          members.push({ ...convertObjectTypeProperty(property), ...baseNodeProps(property) });
+          members.push({
+            ...convertObjectTypeProperty(property, state),
+            ...baseNodeProps(property),
+          });
         }
 
         if (isObjectTypeSpreadProperty(property)) {
           // {p1:T, ...U} -> {p1:T} & U
-          spreads.push(convertFlowType(property.argument));
+          spreads.push(convertFlowType(property.argument, state));
         }
       }
     }
 
     if (node.indexers && node.indexers.length > 0) {
-      members.push(...node.indexers.map(convertObjectTypeIndexer));
+      members.push(...node.indexers.map(i => convertObjectTypeIndexer(i, state)));
     }
 
     if (node.callProperties) {
-      members.push(...node.callProperties.map(convertObjectTypeCallProperty));
+      members.push(...node.callProperties.map(s => convertObjectTypeCallProperty(s, state)));
     }
 
     if (node.internalSlots) {
-      members.push(...node.internalSlots.map(convertObjectTypeInternalSlot));
+      members.push(...node.internalSlots.map(s => convertObjectTypeInternalSlot(s, state)));
     }
 
     // TSCallSignatureDeclaration | TSConstructSignatureDeclaration | TSMethodSignature ;
@@ -307,7 +325,7 @@ export function convertFlowType(node: FlowType): TSType {
   }
 
   if (isTypeofTypeAnnotation(node)) {
-    const typeOp = tsTypeOperator(convertFlowType(node.argument));
+    const typeOp = tsTypeOperator(convertFlowType(node.argument, state));
     typeOp.operator = 'typeof';
     return typeOp;
   }
@@ -316,7 +334,7 @@ export function convertFlowType(node: FlowType): TSType {
     const flowTypes = node.types;
     return tsUnionType(
       flowTypes.map(v => {
-        let tsType = convertFlowType(v);
+        let tsType = convertFlowType(v, state);
         if (isTSFunctionType(tsType)) {
           tsType = tsParenthesizedType(tsType);
         }
@@ -330,13 +348,13 @@ export function convertFlowType(node: FlowType): TSType {
   }
 
   if (isFunctionTypeAnnotation(node)) {
-    const { typeParams, parameters, returnType } = convertFunctionTypeAnnotation(node);
+    const { typeParams, parameters, returnType } = convertFunctionTypeAnnotation(node, state);
     return tsFunctionType(typeParams, parameters, returnType);
   }
 
   if (isTupleTypeAnnotation(node)) {
     const flowTypes = node.types;
-    return tsTupleType(flowTypes.map(convertFlowType));
+    return tsTupleType(flowTypes.map(t => convertFlowType(t, state)));
   }
 
   throw new UnsupportedError(`FlowType(type=${node.type})`);

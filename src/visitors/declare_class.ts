@@ -11,7 +11,7 @@ declare module '@babel/types' {
 }
 
 export function DeclareClass(path: NodePath<DeclareClass>, state: PluginPass) {
-  const decl = convertDeclareClass(path.node);
+  const decl = convertDeclareClass(path.node, state);
   decl.declare = !state.get('isModuleDeclaration');
 
   replaceWith(path, decl);

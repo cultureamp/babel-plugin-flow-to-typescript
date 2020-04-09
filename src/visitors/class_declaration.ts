@@ -12,21 +12,25 @@ import { convertTypeParameterInstantiation } from '../converters/convert_type_pa
 import { convertTypeParameterDeclaration } from '../converters/convert_type_parameter_declaration';
 import { replaceWith } from '../utils/replaceWith';
 import { transformClassBody } from '../transforms/transform_class_body';
+import { PluginPass } from '../types';
 
-export function ClassDeclaration(path: NodePath<ClassDeclaration | ClassExpression>) {
+export function ClassDeclaration(
+  path: NodePath<ClassDeclaration> | NodePath<ClassExpression>,
+  state: PluginPass,
+) {
   const node = path.node;
 
   const superTypeParameters = node.superTypeParameters;
   if (isTypeParameterInstantiation(superTypeParameters)) {
     replaceWith(
       path.get('superTypeParameters'),
-      convertTypeParameterInstantiation(superTypeParameters),
+      convertTypeParameterInstantiation(superTypeParameters, state),
     );
   }
 
   const typeParameters = node.typeParameters;
   if (isTypeParameterDeclaration(typeParameters)) {
-    replaceWith(path.get('typeParameters'), convertTypeParameterDeclaration(typeParameters));
+    replaceWith(path.get('typeParameters'), convertTypeParameterDeclaration(typeParameters, state));
   }
 
   const classImplements = node.implements;
@@ -35,11 +39,11 @@ export function ClassDeclaration(path: NodePath<ClassDeclaration | ClassExpressi
     if (classImplements !== null) {
       for (const classImplement of classImplements) {
         if (classImplement.isClassImplements()) {
-          replaceWith(classImplement, convertInterfaceExtends(classImplement.node));
+          replaceWith(classImplement, convertInterfaceExtends(classImplement.node, state));
         }
       }
     }
   }
 
-  transformClassBody(path.get('body'));
+  transformClassBody(path.get('body'), state);
 }

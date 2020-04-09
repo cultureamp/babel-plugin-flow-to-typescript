@@ -10,21 +10,24 @@ import {
   tsInterfaceDeclaration,
   tsTypeParameterInstantiation,
 } from '@babel/types';
-
-import { convertFlowType } from './convert_flow_type';
-import { convertTypeParameterDeclaration } from './convert_type_parameter_declaration';
-import { convertObjectTypeProperty } from './convert_object_type_property';
+import { PluginPass } from '../types';
 import { baseNodeProps } from '../utils/baseNodeProps';
+import { convertFlowType } from './convert_flow_type';
 import { convertObjectTypeCallProperty } from './convert_object_type_call_property';
 import { convertObjectTypeIndexer } from './convert_object_type_indexer';
 import { convertObjectTypeInternalSlot } from './convert_object_type_internal_slot';
+import { convertObjectTypeProperty } from './convert_object_type_property';
+import { convertTypeParameterDeclaration } from './convert_type_parameter_declaration';
 
-export function convertInterfaceExtends(node: InterfaceExtends | ClassImplements) {
+export function convertInterfaceExtends(
+  node: InterfaceExtends | ClassImplements,
+  state: PluginPass,
+) {
   const typeParameters = node.typeParameters;
   const typeParameterParams = typeParameters ? typeParameters.params : [];
   const parameters = tsTypeParameterInstantiation(
     typeParameterParams.map(item => ({
-      ...convertFlowType(item),
+      ...convertFlowType(item, state),
       ...baseNodeProps(item),
     })),
   );
@@ -35,11 +38,14 @@ export function convertInterfaceExtends(node: InterfaceExtends | ClassImplements
   );
 }
 
-export function convertInterfaceDeclaration(node: InterfaceDeclaration | DeclareInterface) {
+export function convertInterfaceDeclaration(
+  node: InterfaceDeclaration | DeclareInterface,
+  state: PluginPass,
+) {
   let typeParameters = null;
   if (node.typeParameters) {
     typeParameters = {
-      ...convertTypeParameterDeclaration(node.typeParameters),
+      ...convertTypeParameterDeclaration(node.typeParameters, state),
       ...baseNodeProps(node.typeParameters),
     };
   }
@@ -68,7 +74,7 @@ export function convertInterfaceDeclaration(node: InterfaceDeclaration | Declare
 
   if (extendsCombined.length > 0) {
     _extends = extendsCombined.map(v => ({
-      ...convertInterfaceExtends(v),
+      ...convertInterfaceExtends(v, state),
       ...baseNodeProps(v),
     }));
   }
@@ -78,7 +84,7 @@ export function convertInterfaceDeclaration(node: InterfaceDeclaration | Declare
   for (const property of node.body.properties) {
     if (isObjectTypeProperty(property)) {
       bodyElements.push({
-        ...convertObjectTypeProperty(property),
+        ...convertObjectTypeProperty(property, state),
         ...baseNodeProps(property),
       });
     }
@@ -86,20 +92,23 @@ export function convertInterfaceDeclaration(node: InterfaceDeclaration | Declare
   if (node.body.callProperties) {
     bodyElements.push(
       ...node.body.callProperties.map(v => ({
-        ...convertObjectTypeCallProperty(v),
+        ...convertObjectTypeCallProperty(v, state),
         ...baseNodeProps(v),
       })),
     );
   }
   if (node.body.indexers) {
     bodyElements.push(
-      ...node.body.indexers.map(v => ({ ...convertObjectTypeIndexer(v), ...baseNodeProps(v) })),
+      ...node.body.indexers.map(v => ({
+        ...convertObjectTypeIndexer(v, state),
+        ...baseNodeProps(v),
+      })),
     );
   }
   if (node.body.internalSlots) {
     bodyElements.push(
       ...node.body.internalSlots.map(v => ({
-        ...convertObjectTypeInternalSlot(v),
+        ...convertObjectTypeInternalSlot(v, state),
         ...baseNodeProps(v),
       })),
     );

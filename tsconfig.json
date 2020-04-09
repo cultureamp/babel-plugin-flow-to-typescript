@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "module": "commonjs",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
@@ -12,17 +9,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "rootDir": "./src",
-    "baseUrl": "./src",
     "outDir": "./dist",
     "preserveConstEnums": false,
-    "paths": {
-      "babel-plugin-tester": [
-        "./types/babel-plugin-tester.d.ts"
-      ]
-    },
     "sourceMap": true,
     "strict": true,
-    "target": "es2015"
+    "target": "es2015",
+    "skipLibCheck": true,
+    "composite": true
   },
   "include": ["src"]
 }

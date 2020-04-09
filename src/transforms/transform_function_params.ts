@@ -1,26 +1,42 @@
 import { NodePath } from '@babel/traverse';
 import {
-  Identifier,
   isIdentifier,
   isNullableTypeAnnotation,
   isTSFunctionType,
   isTypeAnnotation,
-  Pattern,
-  RestElement,
   tsNullKeyword,
-  TSParameterProperty,
   tsParenthesizedType,
   tsTypeAnnotation,
   tsUndefinedKeyword,
   tsUnionType,
+  Identifier,
+  RestElement,
+  AssignmentPattern,
+  ArrayPattern,
+  ObjectPattern,
+  TSParameterProperty,
+  Node,
 } from '@babel/types';
 import { convertFlowType } from '../converters/convert_flow_type';
+import { PluginPass } from '../types';
 import { replaceWith } from '../utils/replaceWith';
 
 export function transformFunctionParams(
-  params: Array<NodePath<Identifier | Pattern | RestElement | TSParameterProperty>>,
+  paramsPath: OneOrMany<
+    | NodePath<
+        | Identifier
+        | RestElement
+        | AssignmentPattern
+        | ArrayPattern
+        | ObjectPattern
+        | TSParameterProperty
+      >
+    | NodePath<Node>
+  >,
+  state: PluginPass,
 ) {
   let hasRequiredAfter = false;
+  const params = paramsPath instanceof Array ? paramsPath : [paramsPath];
   for (let i = params.length - 1; i >= 0; i--) {
     const paramNode = params[i];
     if (paramNode.isPattern()) {
@@ -39,7 +55,7 @@ export function transformFunctionParams(
         if (isNullableTypeAnnotation(param.typeAnnotation.typeAnnotation)) {
           param.optional = !hasRequiredAfter;
           if (param.optional) {
-            let tsType = convertFlowType(param.typeAnnotation.typeAnnotation.typeAnnotation);
+            let tsType = convertFlowType(param.typeAnnotation.typeAnnotation.typeAnnotation, state);
             if (isTSFunctionType(tsType)) {
               tsType = tsParenthesizedType(tsType);
             }
@@ -51,7 +67,7 @@ export function transformFunctionParams(
         } else {
           if (param.optional && hasRequiredAfter) {
             param.optional = false;
-            let tsType = convertFlowType(param.typeAnnotation.typeAnnotation);
+            let tsType = convertFlowType(param.typeAnnotation.typeAnnotation, state);
             if (isTSFunctionType(tsType)) {
               tsType = tsParenthesizedType(tsType);
             }

@@ -9,11 +9,12 @@ import {
 } from '@babel/types';
 import { convertFlowType } from '../converters/convert_flow_type';
 import { baseNodeProps } from '../utils/baseNodeProps';
+import { PluginPass } from '../types';
 
-export function DeclareModuleExports(path: NodePath<DeclareModuleExports>) {
+export function DeclareModuleExports(path: NodePath<DeclareModuleExports>, state: PluginPass) {
   const node = path.node;
 
-  const tsType = convertFlowType(node.typeAnnotation.typeAnnotation);
+  const tsType = convertFlowType(node.typeAnnotation.typeAnnotation, state);
 
   const aliasId = identifier('__exports');
 

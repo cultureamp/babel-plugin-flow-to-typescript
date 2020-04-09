@@ -1,5 +1,3 @@
-import { File } from '@babel/types';
-
 export interface BabelPluginPass<PluginOptions extends object> {
   key: string | undefined | null;
   file: File;

@@ -20,8 +20,9 @@ import { warnOnlyOnce } from '../util';
 import { convertInterfaceExtends } from './convert_interface_declaration';
 import { convertTypeParameterDeclaration } from './convert_type_parameter_declaration';
 import { getPropertyKey } from './get_property_key';
+import { PluginPass } from '../types';
 
-export function convertDeclareClass(node: DeclareClass) {
+export function convertDeclareClass(node: DeclareClass, state: PluginPass) {
   const bodyElements: ClassBody['body'] = [];
 
   for (const property of node.body.properties) {
@@ -29,7 +30,7 @@ export function convertDeclareClass(node: DeclareClass) {
       throw new Error('ObjectTypeSpreadProperty is unexpected in DeclareClass');
     }
 
-    let convertedProperty = convertFlowType(property.value);
+    let convertedProperty = convertFlowType(property.value, state);
     if (isTSFunctionType(convertedProperty)) {
       convertedProperty = tsParenthesizedType(convertedProperty);
     }
@@ -73,7 +74,12 @@ export function convertDeclareClass(node: DeclareClass) {
 
   if (node.body.indexers) {
     // tslint:disable-next-line:prettier
-    bodyElements.push(...node.body.indexers.map(i => ({...convertObjectTypeIndexer(i), ...baseNodeProps(i)})));
+    bodyElements.push(
+      ...node.body.indexers.map(i => ({
+        ...convertObjectTypeIndexer(i, state),
+        ...baseNodeProps(i),
+      })),
+    );
   }
 
   // todo:
@@ -92,7 +98,7 @@ export function convertDeclareClass(node: DeclareClass) {
       );
     }
 
-    const firstExtend = convertInterfaceExtends(node.extends[0]);
+    const firstExtend = convertInterfaceExtends(node.extends[0], state);
     if (isIdentifier(firstExtend.expression)) {
       superClass = { ...firstExtend.expression, ...baseNodeProps(node.extends[0].id) };
       if (firstExtend.typeParameters && node.extends[0].typeParameters) {
@@ -109,7 +115,7 @@ export function convertDeclareClass(node: DeclareClass) {
   let typeParameters = null;
   if (isTypeParameterDeclaration(node.typeParameters)) {
     typeParameters = {
-      ...convertTypeParameterDeclaration(node.typeParameters),
+      ...convertTypeParameterDeclaration(node.typeParameters, state),
       ...baseNodeProps(node.typeParameters),
     };
   }
@@ -118,7 +124,7 @@ export function convertDeclareClass(node: DeclareClass) {
   let _implements = null;
   if (node.implements && node.implements.length) {
     _implements = node.implements.map(i => ({
-      ...convertInterfaceExtends(i),
+      ...convertInterfaceExtends(i, state),
       ...baseNodeProps(i),
     }));
   }

@@ -39,16 +39,16 @@
     "url": "https://github.com/Kiikurage/babel-plugin-flow-to-typescript.git"
   },
   "peerDependencies": {
-    "@babel/core": "^7.4.4"
+    "@babel/core": "^7.9.0"
   },
   "dependencies": {
-    "@babel/template": "^7.7.0",
-    "@babel/traverse": "^7.7.0",
-    "@babel/types": "^7.7.4"
+    "@babel/template": "^7.8.6",
+    "@babel/traverse": "^7.9.0",
+    "@babel/types": "^7.9.0"
   },
   "devDependencies": {
-    "@types/babel__traverse": "^7.0.8",
-    "babel-plugin-tester": "^7.0.1",
+    "@types/babel__traverse": "7.0.10",
+    "babel-plugin-tester": "^9.0.0",
     "codecov": "^3.6.1",
     "jest": "^24.9.0",
     "prettier": "^1.17.1",
@@ -56,7 +56,7 @@
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
-    "typescript": "^3.7.2"
+    "typescript": "^3.8.3"
   },
   "jest": {
     "testEnvironment": "node",

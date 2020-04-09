@@ -1,14 +1,26 @@
 import { NodePath } from '@babel/traverse';
-import { ClassBody } from '@babel/types';
+import { ClassBody, Node } from '@babel/types';
 import { transformFunctionParams } from './transform_function_params';
+import { PluginPass } from '../types';
 
-export function transformClassBody(path: NodePath<ClassBody>) {
-  for (const elementPath of path.get('body')) {
+export function transformClassBody(
+  path: OneOrMany<NodePath<ClassBody> | NodePath<Node>>,
+  state: PluginPass,
+) {
+  const pathOrFirst = path instanceof Array ? path[0] : path;
+
+  if (!pathOrFirst.isClassBody()) return;
+  for (const elementPath of pathOrFirst.get('body')) {
     if (elementPath.isClassMethod()) {
       if (elementPath.node.kind === 'constructor') {
-        elementPath.get('returnType').remove();
+        const returnType = elementPath.get('returnType');
+        if (returnType instanceof Array) {
+          returnType[0].remove();
+        } else {
+          returnType.remove();
+        }
       }
-      transformFunctionParams(elementPath.get('params'));
+      transformFunctionParams(elementPath.get('params'), state);
     }
 
     if (elementPath.isClassProperty()) {

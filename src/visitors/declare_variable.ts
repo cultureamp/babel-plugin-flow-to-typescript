@@ -5,7 +5,7 @@ import { replaceWith } from '../utils/replaceWith';
 import { PluginPass } from '../types';
 
 export function DeclareVariable(path: NodePath<DeclareVariable>, state: PluginPass) {
-  const replacement = convertDeclareVariable(path.node);
+  const replacement = convertDeclareVariable(path.node, state);
   replacement.declare = !state.get('isModuleDeclaration');
   replaceWith(path, replacement);
 }
